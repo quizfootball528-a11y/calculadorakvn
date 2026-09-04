@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do KVN</title>
+    <!-- Linha que conecta o HTML ao arquivo CSS externo -->
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="icon" href="images.png" type="image/png">
+</head>
+<body>
+    <div class="fundo">
+        <h1>Saca a Calculadora do Pai🤙</h1>
+        <div class="calculadora">
+            <h1>Sábio👌</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <td><button class="botao" onclick="back()">⌫</button></td>
+                    <td><button class="botao" onclick="inserir('/')">/</button></td>
+                    <td><button class="botao" onclick="inserir('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="inserir('7')">7</button></td>
+                    <td><button class="botao" onclick="inserir('8')">8</button></td>
+                    <td><button class="botao" onclick="inserir('9')">9</button></td>
+                    <td><button class="botao" onclick="inserir('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="inserir('4')">4</button></td>
+                    <td><button class="botao" onclick="inserir('5')">5</button></td>
+                    <td><button class="botao" onclick="inserir('6')">6</button></td>
+                    <td><button class="botao" onclick="inserir('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="inserir('1')">1</button></td>
+                    <td><button class="botao" onclick="inserir('2')">2</button></td>
+                    <td><button class="botao" onclick="inserir('3')">3</button></td>
+                    <td rowspan="2"><button class="botao botao-igual" onclick="trolarecalcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao botao-zero" onclick="inserir('0')">0</button></td>
+                    <td><button class="botao" onclick="inserir('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="calculator.js">
+        if(localStorage.getItem("logadoKVN") !== "true"){
+            window.location.href = "../login/login.html"
+        }
+    </script>
+</body>
+</html>
