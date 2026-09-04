@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fundo{
+    height: 100vh;
+    background-image: linear-gradient(
+        35deg, rgb(34,34,34), green
+    );
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 2px;
+    
+    
+}
+#donde{
+    font-size: 50px;
+    text-shadow: 0 0 15.5px rgb(0,0,0);
+    color: rgb(255, 255, 255);
+}
+    
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0,0,0,0.7);
+    padding: 45px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+
+.login input{
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin: 10px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+
+}
+.login input:focus{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px green;
+}
+
+.login button{
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.login button:hover{
+    transform: scale(1.05);
+    background-color: rgb(0,180,0);
+    box-shadow: 0 0 15px green;
+
+}
+
+.login button:active{
+    transform: scale(0.95);
+}
+
+.login h1{
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+.login{
+    animation: aparecer 0.8s ease;
+
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#mensagem {
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mensagem_entrar {
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+.links a{
+color:white;
+text-decoration: none;
+font-size: 14px;
+transition: 0.3s;
+}
+.links a:hover{
+    color:green;
+    text-decoration: underline;
+}
+
+#mensagem_cadastro {
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aceite{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.aceite input{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+.aceite label{
+    cursor: pointer;
+}
+.senha-container{
+    position: relative;
+    width: 250px;
+    margin: 10px auto;
+}
+.senha-container input{
+    width: 100%;
+    margin: 0;
+}
+
+#olho{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+.criesenha{
+    position: relative;
+    width: 250px;
+    margin: 10px auto;
+}
+.criesenha{
+    width: 100%;
+    margin: 0;
+}
+
+#olhos{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+footer{
+    position: fixed;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.3) ;
+    font-size: 14px;
+    z-index: 10;
+
+}
+
+#mensagem_redefinir{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
